@@ -39,12 +39,18 @@ body{margin-top:50px;}
 	************************************************
 ************************************************/
 
+html{
+    overflow-x: hidden;
+}
+
+
 header{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 2rem;
-    padding: 0 4rem 0 2rem;
+    width: 40rem;
+    height: 3.6rem;
+    padding: 0 2rem 0 2rem;
+    
 }
 
 header .chat-logo{
@@ -52,15 +58,20 @@ header .chat-logo{
     flex: row;
     flex-wrap: nowrap;
     padding: 1rem;
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    color: wheat;
+    border: 2px solid;
+    border-radius: 2rem 2rem 2rem 0;
 }
 
 header .chat-logo span {
     display: flex;
     flex-direction: row;
-    width:20%;
-    height: 20%;
-    align-items: center;
-    justify-content: center;
+    width:100%;
+    height: 2rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
 }
 
 .chat-logo img {
@@ -78,6 +89,9 @@ header .chat-logo span {
     -webkit-border-radius: 0 3px 0 0;
     -moz-border-radius: 0 3px 0 0;
     border-radius: 0 3px 0 0;
+    background-color: wheat;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
 }
 
 .selected-user span {
@@ -91,6 +105,9 @@ header .chat-logo span {
 .chat-container {
     position: relative;
     padding: 1rem;
+    background-color: wheat;
+     border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
 }
 
 .chat-container li.chat-left,
@@ -99,6 +116,7 @@ header .chat-logo span {
     flex: 1;
     flex-direction: row;
     margin-bottom: 40px;
+    
 }
 
 .chat-container li img {
