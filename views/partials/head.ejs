@@ -1,9 +1,12 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width-device-width, initial-scale=1.0" />
 <meta http-equiv="X-pUA-Compatible" content="ie=edge" />
-<title>Channitee</title>
+<title>Chanity</title>
+
+<link rel="icon" href="https://media.istockphoto.com/id/1219543292/vector/video-call-icon-logo-vector-illustration-video-call-icon-design-vector-template-trendy-video.jpg?s=612x612&w=0&k=20&c=oTrq247HUVtvxk_YE0E3XjAIaMHOK7q8FoXdNhM2124=" type="image/icon type">
 
 <!-- For the Fontsome CDN Link-->
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
@@ -29,18 +32,42 @@ body{margin-top:50px;}
 /*************** 2.Mixins ***************/
 
 
-/************************************************
-    ************************************************
-										Search Box
-	************************************************
-************************************************/
-
 
 /************************************************
 	************************************************
 									Chat main
 	************************************************
 ************************************************/
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 2rem;
+    padding: 0 4rem 0 2rem;
+}
+
+header .chat-logo{
+    display: flex;
+    flex: row;
+    flex-wrap: nowrap;
+    padding: 1rem;
+}
+
+header .chat-logo span {
+    display: flex;
+    flex-direction: row;
+    width:20%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 .selected-user {
     width: 100%;
